@@ -18,8 +18,8 @@ const data = {
   name: chalk.white('               Connor Skees'),
   handle: chalk.white('connor.skees'),
   work: chalk.white('Chief Technology Officer at 3BApps LLC'),
-  facebook:
-    chalk.gray('https://www.facebook.com/') + chalk.blue('connor.skees.92'),
+  portfolio:
+    chalk.gray('https://connors-resume.web.app/') + chalk.blue('projects'),
   github: chalk.gray('https://github.com/') + chalk.green('ConnorsApps'),
   linkedin:
     chalk.gray('https://linkedin.com/in/') +
@@ -29,7 +29,7 @@ const data = {
     ' ' +
     chalk.white('connor.skees  (via GitHub Package Registry)'),
   labelWork: chalk.white.bold('       Work:'),
-  labelFacebook: chalk.white.bold('   Facebook:'),
+  labelPortfolio: chalk.white.bold('   Portfolio:'),
   labelTwitter: chalk.white.bold('    Twitter:'),
   labelnpm: chalk.white.bold('        npm:'),
   labelGitHub: chalk.white.bold('     GitHub:'),
@@ -43,7 +43,7 @@ const newline = '\n';
 const heading = `${data.name} / ${data.handle}`;
 const working = `${data.labelWork}  ${data.work}`;
 const githubing = `${data.labelGitHub}  ${data.github}`;
-const facebook = `${data.labelFacebook}  ${data.facebook}`;
+const portfolio = `${data.labelPortfolio}  ${data.portfolio}`;
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`;
 // const webing = `${data.labelWeb}  ${data.web}`; todo
 const carding = `${data.labelCard}  ${data.npx}`;
@@ -59,7 +59,7 @@ const output =
   newline + // data.labelGitHub + data.github
   linkedining +
   newline +
-  facebook +
+  portfolio +
   newline +
   newline + // data.labelWeb + data.web
   carding; // data.labelCard + data.npx
