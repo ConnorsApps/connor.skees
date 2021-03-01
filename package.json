@@ -26,7 +26,7 @@
     "npx card",
     "business card"
   ],
-  "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
+  "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im) edited by Connor S",
   "license": "MIT",
   "files": [
     "bin/card.js",
