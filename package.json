@@ -1,6 +1,7 @@
 {
   "name": "connor.skees",
-  "version": "1.6.1",
+  "version": "1.7.0",
+  "type": "module",
   "description": "A personal card for Connor Skees",
   "main": "/bin/card.js",
   "bin": {
@@ -10,7 +11,6 @@
     "type": "git",
     "url": "git+https://github.com/ConnorsApps/connor.skees.git"
   },
-  "homepage": "https://bnb.im",
   "scripts": {
     "prepublish": "npm run build",
     "build": "node build.js",
@@ -33,14 +33,13 @@
     "bin/output"
   ],
   "devDependencies": {
-    "boxen": "^2.1.0",
-    "chalk": "^2.4.1",
-    "standard": "^12.0.1"
+    "boxen": "^7.0.1",
+    "chalk": "^5.2.0",
+    "standard": "^17.0.0"
   },
   "bugs": {
     "url": "https://github.com/bnb/bitandbang/issues"
   },
-  "dependencies": {},
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
   }

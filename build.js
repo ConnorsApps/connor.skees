@@ -1,10 +1,10 @@
 'use strict';
 
 // Pull in our modules
-const chalk = require('chalk');
-const boxen = require('boxen');
-const fs = require('fs');
-const path = require('path');
+import chalk from 'chalk';
+import boxen from 'boxen';
+import fs from 'fs';
+import path from 'path';
 
 // Define options for Boxen
 const options = {
@@ -17,9 +17,9 @@ const options = {
 const data = {
   name: chalk.white('               Connor Skees'),
   handle: chalk.white('connor.skees'),
-  work: chalk.white('Chief Technology Officer at 3BApps LLC'),
+  work: chalk.white('Platform Engineer At Sweetwater Sound'),
   portfolio:
-    chalk.gray('https://connors-resume.web.app/') + chalk.blue('projects'),
+    chalk.gray('https://resume.connorskees.com/') + chalk.blue('projects'),
   github: chalk.gray('https://github.com/') + chalk.green('ConnorsApps'),
   linkedin:
     chalk.gray('https://linkedin.com/in/') +
@@ -65,6 +65,6 @@ const output =
   carding; // data.labelCard + data.npx
 
 fs.writeFileSync(
-  path.join(__dirname, 'bin/output'),
+  path.join(path.dirname('./'), 'bin/output'),
   chalk.green(boxen(output, options))
 );
